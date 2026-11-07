@@ -19,18 +19,18 @@ in the git staged changes).
 1. Start a new trial manager model (which is at least as capable as the most
 capable agent that is required to effectively execute the rule)
 2. Find promps that produce changes judged to involve the rule, these prompts
-should be generated from (ordered by priority):
-    1a. reviewing current changes
-    1b. git blame (repeating previously done changes)
+should be generated from (ordered by priority):  
+    1a. reviewing current changes  
+    1b. git blame (repeating previously done changes)  
     1c. Invent changes to be made
 3. Create two worktrees, one with the rule (intervention worktree) and one
 without the rule (control worktree)
 4. Having a set of N prompts, run 2M trials for each prompt, running each
 prompt M times in the intervention worktree, and M times in the control
-worktree.
-    2a. Here each agent must be in a read only mode and the context and memory
-    should be clean, run the agent on Sonnet low by default.
-    2b. The agent should return either a failure state (discontinued) or a set
+worktree.  
+    a. Here each agent must be in a read only mode and the context and memory
+    should be clean, run the agent on Sonnet low by default.  
+    b. The agent should return either a failure state (discontinued) or a set
     of changes to perform the
 requested change.
 5. Once all runs have finished, for each of the prompts, valuate if the rule
@@ -38,11 +38,11 @@ produced a change on the outputs by comparing the control group to the
 intervetion group, and produce a report on the distribution of change. 
 6. Once all prompts have a report on the distrubution of change, produce a
 final report, which should inform the user of the effect. The effect will
-either be:
-    5a."no change": The rule has no identifiable change
-    5b. "effective change": The rule produces a change and it
-    is believed to be the expected one.
-    5c. "ineffective change": The rule produces a change and it is believed to
+either be:  
+    a. "no change": The rule has no identifiable change  
+    b. "effective change": The rule produces a change and it
+    is believed to be the expected one.  
+    c. "ineffective change": The rule produces a change and it is believed to
     be counter productive to the original expected change (as inferred by the
     tester model based on the user's instructions).
 
