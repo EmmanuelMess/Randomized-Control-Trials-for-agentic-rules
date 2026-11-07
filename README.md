@@ -29,7 +29,7 @@ without the rule (control worktree)
 prompt M times in the intervention worktree, and M times in the control
 worktree.
     2a. Here each agent must be in a read only mode and the context and memory
-    should be clean.
+    should be clean, run the agent on Sonnet low by default.
     2b. The agent should return either a failure state (discontinued) or a set
     of changes to perform the
 requested change.
