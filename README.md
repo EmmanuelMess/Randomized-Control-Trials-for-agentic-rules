@@ -54,7 +54,8 @@ First, there is an issue on the use of an invented numerical rating system,
 I think this idea is wrong due to the statistically problematic data it is
 feeding on, and the stockastic nature of the creation of the number itself.
 Also it think the implementation has trouble creating the final report, and
-the use must ask for data themselves.
+the use must ask for data themselves. Finally, the model provided is
+basically hardcoded to be Anthropic.
 
 ## License
 
