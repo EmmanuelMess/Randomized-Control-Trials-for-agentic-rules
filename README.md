@@ -35,7 +35,7 @@ worktree.
     b. The agent should return either a failure state (discontinued) or a set
     of changes to perform the
 requested change.
-5. Once all runs have finished, for each of the prompts, valuate if the rule
+5. Once all runs have finished, for each of the prompts, evaluate if the rule
 produced a change on the outputs by comparing the control group to the
 intervetion group, and produce a report on the distribution of change. 
 6. Once all prompts have a report on the distrubution of change, produce a
