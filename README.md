@@ -1,6 +1,6 @@
 # Randomized Control Trials for agentic rules
 
-(AI:0 under https://www.namtao.com/0rwx/)
+(AI:0 under https://0rwx.com/)
 
 Use the idea of RCT to run tests on a new rule added to agents, to test its
 validity. I propose this would effectively be equivalent to running unit tests
@@ -51,7 +51,7 @@ either be:
 ## Proposed concrete implementation
 
 An implementation of the algorithm was created using Claude Opus 5.5 on high,
-(thus is AI:W under https://www.namtao.com/0rwx/), and has quite a few issues.
+(thus is AI:W under https://0rwx.com/), and has quite a few issues.
 First, there is an issue on the use of an invented numerical rating system,
 I think this idea is wrong due to the statistically problematic data it is
 feeding on, and the stockastic nature of the creation of the number itself.
