@@ -20,7 +20,7 @@ in the git staged changes).
 
 1. Start a new trial manager model (which is at least as capable as the most
 capable agent that is required to effectively execute the rule)
-2. Find promps that produce changes judged to involve the rule, these prompts
+2. Find prompts that produce changes judged to involve the rule, these prompts
 should be generated from (ordered by priority):  
     a. reviewing current changes  
     b. git blame (repeating previously done changes)  
@@ -37,8 +37,8 @@ worktree.
 requested change.
 5. Once all runs have finished, for each of the prompts, evaluate if the rule
 produced a change on the outputs by comparing the control group to the
-intervetion group, and produce a report on the distribution of change. 
-6. Once all prompts have a report on the distrubution of change, produce a
+intervention group, and produce a report on the distribution of change. 
+6. Once all prompts have a report on the distribution of change, produce a
 final report, which should inform the user of the effect. The effect will
 either be:  
     a. "no change": The rule has no identifiable change  
