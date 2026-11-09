@@ -11,6 +11,8 @@ some issues, and encourage changes.
 
 After the skill finishes running I encourage the user to ask for a report.
 
+<img src="images/drawing.svg"/>
+
 ## Algorithm
 
 Given a new rule was created in the change set to be evaluated (for example,
@@ -20,9 +22,9 @@ in the git staged changes).
 capable agent that is required to effectively execute the rule)
 2. Find promps that produce changes judged to involve the rule, these prompts
 should be generated from (ordered by priority):  
-    1a. reviewing current changes  
-    1b. git blame (repeating previously done changes)  
-    1c. Invent changes to be made
+    a. reviewing current changes  
+    b. git blame (repeating previously done changes)  
+    c. Invent changes to be made
 3. Create two worktrees, one with the rule (intervention worktree) and one
 without the rule (control worktree)
 4. Having a set of N prompts, run 2M trials for each prompt, running each
